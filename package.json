@@ -5,5 +5,9 @@
   "main": "index.js",
   "repository": "https://github.com/heecheol153/typechain",
   "author": "heecheol153 <heecheol153@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "start": "node index.js",
+    "prestart": "tsc"
+  }
 }

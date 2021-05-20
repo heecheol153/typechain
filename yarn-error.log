@@ -1,0 +1,36 @@
+Arguments: 
+  /usr/local/bin/node /Users/hcj/.yarn/bin/yarn.js init
+
+PATH: 
+  /usr/local/opt/ruby/bin:/usr/local/opt/python@3.9/bin:/usr/local/opt/openssl@1.1/bin:/Users/hcj/.cargo/bin:/Users/hcj/usr/local/var/nodebrew/current/bin:/usr/local/go/bin:/Users/hcj/flutter/bin:/Users/hcj/.yarn/bin:/Users/hcj/.config/yarn/global/node_modules/.bin:/usr/local/opt/ruby/bin:/usr/local/Cellar/zplug/2.4.2/repos/zplug/zplug/bin:/usr/local/opt/zplug/bin:/Users/hcj/Library/Python/3.9/bin:/usr/local/bin:/usr/local/sbin:/Users/hcj/.npm-global/bin:/Library/Frameworks/Python.framework/Versions/3.9/bin:/Users/hcj/.cargo/bin:/Library/Frameworks/Python.framework/Versions/3.8/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/go/bin:/Library/Apple/usr/bin:/usr/local/opt/ruby/bin:/usr/local/opt/python@3.9/bin:/usr/local/opt/openssl@1.1/bin:/Users/hcj/opt/anaconda3/bin:/Users/hcj/opt/anaconda3/condabin:/Users/hcj/usr/local/var/nodebrew/current/bin:/Users/hcj/flutter/bin:/Users/hcj/.yarn/bin:/Users/hcj/.config/yarn/global/node_modules/.bin:/Users/hcj/Library/Android/sdk/tools:/Users/hcj/Library/Android/sdk/platform-tools
+
+Yarn version: 
+  1.22.4
+
+Node version: 
+  14.12.0
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: canceled
+      at Interface.<anonymous> (/Users/hcj/.yarn/lib/cli.js:137008:13)
+      at Interface.emit (events.js:314:20)
+      at Interface._ttyWrite (readline.js:875:16)
+      at ReadStream.onkeypress (readline.js:213:10)
+      at ReadStream.emit (events.js:314:20)
+      at emitKeys (internal/readline/utils.js:344:14)
+      at emitKeys.next (<anonymous>)
+      at ReadStream.onData (readline.js:1144:36)
+      at ReadStream.emit (events.js:314:20)
+      at addChunk (_stream_readable.js:307:12)
+
+npm manifest: 
+  No manifest
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
