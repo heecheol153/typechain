@@ -39,7 +39,7 @@ class Block {
 
 const genesisBlock: Block = new Block(0, "2020202020202", "", "Hello", 123456);
 
-let blockchain: [Block] = [genesisBlock];
+let blockchain: [Block] = [genesisBlock]; // 배열과 같은걸로block이 아닌것을 push하지않게 막는다
 
 const getBlockchain = (): Block[] => blockchain;
 
@@ -91,13 +91,17 @@ const isBlockValid = (candidateBlock: Block, previousBlock: Block): boolean => {
   }
 };
 
+// addBlock을 createNewBlock함수에 연결
 const addBlock = (candidateBlock: Block): void => {
   if (isBlockValid(candidateBlock, getLatestBlock())) {
     blockchain.push(candidateBlock);
   }
 };
 
-//console.log(createNewBlock("Hello"));  //에러발생원인은 블록체인은 블록한개만 가져야한다. 두개라서 에러발생.
-//console.log(createNewBlock("bye bye")); // 이둘 인덱스가 1이다. 블록이 isValid라는 구조확인한다.
+createNewBlock("second block");  //1번 블록해쉬값을 확인할수있다.
+createNewBlock("third block");   //2번 블록해쉬값을 확인할수있다.
+createNewBlock("fourth block");  //3번 블록해쉬값을 확인할수있다.
+
+console.log(blockchain);
 
 export {};
